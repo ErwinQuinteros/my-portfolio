@@ -1,56 +1,54 @@
-import React, { useState } from "react";
-import Menu from "./Menu";
-import { Link } from "react-scroll";
-const NavBar = () => {
-  const [isMenuopen, setIsMenuOpen] = useState(false);
+import React, { useState } from 'react';
+import clsx from 'clsx';
+import { motion } from "framer-motion";
+
+const Header = () => {
+  const [active, setActive] = useState('Projects');
 
   const links = [
-    {
-      link: "About",
-      id: 1,
-    },
-    {
-      link: "Projects",
-      id: 2,
-    },
-    {
-      link: "Experience",
-      id: 3,
-    },
-    {
-      link: "Contact",
-      id: 4,
-    },
+    { name: 'Home', href: '#home' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Skills', href: '#skills' },
+    { name: 'Experience', href: '#experience' },
+    { name: 'Education', href: '#education' },
+    { name: 'Contact', href: '#contact' },
   ];
 
   return (
-    <div
-      className={[
-        "absolute",
-        !isMenuopen
-          ? " z-[300] absolute w-[69px] p-10 left-4 h-[47px]"
-          : " items-center justify-around flex flex-col z-[300] fixed w-screen h-screen bg-[#2B2B29]",
-      ]}
-    >
-      <Menu
-        isMenuOpen={isMenuopen}
-        handleMenu={() => setIsMenuOpen(!isMenuopen)}
-      />
-
-      {isMenuopen &&
-        links.map((l) => (
-          <Link
-            className="text-[30px] text-white cursor-pointer"
-            onClick={() => setIsMenuOpen(false)}
-            to={l.link}
-            key={l.id}
-            smooth={500}
-          >
-            {l.link}
-          </Link>
-        ))}
-    </div>
+    <header className="z-[999] relative">
+      <motion.div
+        className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full dark:border-black/40 dark:bg-opacity-75"
+        initial={{ y: -100, x: "-50%", opacity: 0 }}
+        animate={{ y: 0, x: "-50%", opacity: 1 }}
+      ></motion.div>
+      <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0 text-gray-950">
+        <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
+          {links.map((link) => (
+              <motion.li
+              className="h-3/4 flex items-center justify-center relative"
+              key={link.hash}
+              initial={{ y: -100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+            >
+              <a
+                href={link.href}
+                className={clsx(
+                  'flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition',
+                  active === link.name && 'text-white dark:text-black'
+                )}
+                onClick={() => setActive(link.name)}
+              >
+                {link.name}
+                {active === link.name && (
+                  <span className="bg-gray-100 rounded-full absolute inset-0 -z-10"></span>
+                )}
+              </a>
+            </motion.li>
+          ))}
+        </ul>
+      </nav>
+    </header>
   );
 };
 
-export default NavBar;
+export default Header;

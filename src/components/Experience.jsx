@@ -1,56 +1,58 @@
-import React from "react";
-import javascript from "../assets/technologies/javascript.png";
-import html from "../assets/technologies/html.png";
-import css from "../assets/technologies/css.png";
-import firebase from "../assets/technologies/firebase.png";
-import figma from "../assets/technologies/figma.png";
-import reactjs from "../assets/technologies/reactjs.png";
-import github from "../assets/technologies/github.png";
+import { skillsData } from "../utils/data/skills";
+import { skillsImage } from "../utils/skill-image";
+import Marquee from "react-fast-marquee";
 
-const Experience = () => {
-  const technologies = [
-    {
-      name: "javascript",
-      imageSrc: javascript,
-    },
-    {
-      name: "css",
-      imageSrc: css,
-    },
-    {
-      name: "html",
-      imageSrc: html,
-    },
-    {
-      name: "figma",
-      imageSrc: figma,
-    },
-    {
-      name: "firebase",
-      imageSrc: firebase,
-    },
-    {
-      name: "reactjs",
-      imageSrc: reactjs,
-    },
-    {
-      name: "github",
-      imageSrc: github,
-    },
-  ];
-
+function Experience() {
   return (
-    <div
-      name="Experience"
-      className=" h-screen w-full flex flex-col items-center justify-center"
-    >
-      <h2 className="font-semibold text-[40px]">Experience</h2>
-      <div className="w-screen content-center  grid-cols-3 gap-8 grid  mt-[5%] pt-[10%] pb-[10%] bg-[#2B2B29] p-10">
-        {technologies.map((t) => (
-          <div key={t.name} className="flex justify-center items-center">
-            <img src={t.imageSrc} alt="Technologie" className="object-cover" />
-          </div>
-        ))}
+    <div id="skills" className="relative z-50 my-12 lg:my-24 border-[#25213b] mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem] text-white">
+      <div className="flex justify-center my-5 lg:py-8">
+        <div className="flex  items-center">
+          <span className="w-24 h-[2px] bg-[#1a1443]"></span>
+          <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
+            Skills
+          </span>
+          <span className="w-24 h-[2px] bg-[#1a1443]"></span>
+        </div>
+      </div>
+
+      
+      <div className="w-full my-12">
+        <Marquee
+          gradient={false}
+          speed={80}
+          pauseOnHover={true}
+          pauseOnClick={true}
+          delay={0}
+          play={true}
+          direction="left"
+        >
+          {skillsData.map((skill, id) => (
+            <div className="w-36 min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.15] cursor-pointer"
+              key={id}>
+              <div className="h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50 group-hover:border-violet-500 transition-all duration-500">
+                <div className="flex -translate-y-[1px] justify-center">
+                  <div className="w-3/4">
+                    <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-violet-500 to-transparent" />
+                  </div>
+                </div>
+                <div className="flex flex-col items-center justify-center gap-3 p-6">
+                  <div className="h-8 sm:h-10">
+                  <img
+                      src={skillsImage(skill)}
+                      alt={skill}
+                      width={40}
+                      height={40}
+                      className="h-full w-auto rounded-lg"
+                    />
+                  </div>
+                  <p className="text-white text-sm sm:text-lg">
+                    {skill}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </Marquee>
       </div>
     </div>
   );

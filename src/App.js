@@ -9,9 +9,8 @@ import SlideBar from './components/SlideBar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App min-h-screen ">
       <NavBar/>
-      <SlideBar/>
       <Home/>
       <About/>
       <Projects/>
