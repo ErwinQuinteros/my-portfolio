@@ -7,10 +7,10 @@ const Header = () => {
 
   const links = [
     { name: 'Home', href: '#home' },
+    { name: 'About', href: '#about-us' },
     { name: 'Projects', href: '#projects' },
     { name: 'Skills', href: '#skills' },
     { name: 'Experience', href: '#experience' },
-    { name: 'Education', href: '#education' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -25,7 +25,7 @@ const Header = () => {
         <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
           {links.map((link) => (
               <motion.li
-              className="h-3/4 flex items-center justify-center relative"
+              className="relative flex items-center justify-center h-3/4"
               key={link.hash}
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -40,7 +40,7 @@ const Header = () => {
               >
                 {link.name}
                 {active === link.name && (
-                  <span className="bg-gray-100 rounded-full absolute inset-0 -z-10"></span>
+                  <span className="absolute inset-0 bg-gray-100 rounded-full -z-10"></span>
                 )}
               </a>
             </motion.li>

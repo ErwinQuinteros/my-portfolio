@@ -1,49 +1,97 @@
+import React from "react";
+import { Tilt } from 'react-tilt';
+import { motion } from "framer-motion";
 
-import projectImage from "../assets/project.jpg";
+import { SectionWrapper } from "../hoc";
+import { projects } from "../constants";
+import { fadeIn, textVariant } from "../utils/motion";
 
-const Projects = () => {
-  const projects = [
-    {
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, autem molestiae. Facilis quidem temporibus fugit aliquid corrupti, vero, debitis laborum minus repellat, est reiciendis soluta laudantium cum! Aut, quaerat dignissimos.",
-      projectsImageSrc: projectImage,
-      githubLink: "",
-      deployLink: "",
-    },
-    {
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, autem molestiae. Facilis quidem temporibus fugit aliquid corrupti, vero, debitis laborum minus repellat, est reiciendis soluta laudantium cum! Aut, quaerat dignissimos.",
-      projectsImageSrc: projectImage,
-      githubLink: "",
-      deployLink: "",
-    },
-    {
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, autem molestiae. Facilis quidem temporibus fugit aliquid corrupti, vero, debitis laborum minus repellat, est reiciendis soluta laudantium cum! Aut, quaerat dignissimos.",
-      projectsImageSrc: projectImage,
-      githubLink: "",
-      deployLink: "",
-    },
-  ];
-
+const ProjectCard = ({
+  index,
+  name,
+  description,
+  tags,
+  image,
+  source_code_link,
+}) => {
   return (
-    <div
-    id="Projects"
-    className="relative z-50 bg-white"
-  >
-    <div className="flex justify-center lg:py-8">
-      <div className="flex  items-center">
-        <span className="w-24 h-[2px] bg-[#1a1443]"></span>
-        <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
-          Projects
-        </span>
-        <span className="w-24 h-[2px] bg-[#1a1443]"></span>
-      </div>
-    </div>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+      <Tilt
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450,
+        }}
+        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+      >
+        <div className='relative w-full h-[230px]'>
+          <img
+            src={image}
+            alt='project_image'
+            className='object-cover w-full h-full rounded-2xl'
+          />
 
-    
-  </div>
+          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+            <div
+              onClick={() => window.open(source_code_link, "_blank")}
+              className='flex items-center justify-center w-10 h-10 rounded-full cursor-pointer black-gradient'
+            >
+              <img
+                src="/"
+                alt='source code'
+                className='object-contain w-1/2 h-1/2'
+              />
+            </div>
+          </div>
+        </div>
+        <div className='mt-5'>
+          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+        </div>
+
+        <div className='flex flex-wrap gap-2 mt-4'>
+          {tags.map((tag) => (
+            <p
+              key={`${name}-${tag.name}`}
+              className={`text-[14px] ${tag.color}`}
+            >
+              #{tag.name}
+            </p>
+          ))}
+        </div>
+      </Tilt>
+    </motion.div>
   );
 };
 
-export default Projects;
+const Projects = () => {
+  return (
+    <>
+      <motion.div variants={textVariant()}>
+        <p>My work</p>
+        <h2>Projects.</h2>
+      </motion.div>
+
+      <div className='flex w-full'>
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        >
+          Following projects showcases my skills and experience through
+          real-world examples of my work. Each project is briefly described with
+          links to code repositories and live demos in it. It reflects my
+          ability to solve complex problems, work with different technologies,
+          and manage projects effectively.
+        </motion.p>
+      </div>
+
+      <div className='flex flex-wrap gap-6 mt-20'>
+        {projects.map((project, index) => (
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        ))}
+      </div>
+    </>
+  );
+};
+
+export default SectionWrapper(Projects, "");
