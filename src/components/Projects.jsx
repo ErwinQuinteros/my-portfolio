@@ -1,6 +1,7 @@
 import React from "react";
 import { Tilt } from 'react-tilt';
 import { motion } from "framer-motion";
+import { styles } from "../styles";
 
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
@@ -68,8 +69,8 @@ const Projects = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p>My work</p>
-        <h2>Projects.</h2>
+        <p className={`${styles.sectionSubText} `}>My work</p>
+        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 
       <div className='flex w-full'>

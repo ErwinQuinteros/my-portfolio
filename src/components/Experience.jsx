@@ -1,5 +1,7 @@
 import React from "react";
-
+import { motion } from "framer-motion";
+import { textVariant } from "../utils/motion";
+import { styles } from "../styles";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -9,21 +11,22 @@ import { FaRegQuestionCircle, FaServer, FaLaptopCode } from "react-icons/fa";
 
 const Experience = () => {
   return (
-    <div className="bg-[#111827] py-6">
-      <div className="flex justify-center lg:py-8">
-        <div className="flex items-center">
-          <span className="w-24 h-[2px] bg-[#1a1443]"></span>
-          <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
-            Experience
-          </span>
-          <span className="w-24 h-[2px] bg-[#1a1443]"></span>
-        </div>
-      </div>
+    <div id="experience" className="bg-[#111827] py-6">
+     <motion.div variants={textVariant()}>
+        <p className={`${styles.sectionSubText} text-center`}>
+          What I have done so far
+        </p>
+        <h2 className={`${styles.sectionHeadText} text-center`}>
+          Work Experience.
+        </h2>
+      </motion.div>
+      <div className='mt-20 mb-20'>
       <VerticalTimeline>
         <VerticalTimelineElement
           contentStyle={{
-            background: "#1d1836",
+            background: "#262D3A",
             color: "#fff",
+            marginTop: "2rem"
           }}
           date="2020-08-09"
           iconStyle={{ background: "#777777", color: "#333845" }}
@@ -40,7 +43,7 @@ const Experience = () => {
 
         <VerticalTimelineElement
           contentStyle={{
-            background: "#1d1836",
+            background: "#262D3A",
             color: "#fff",
           }}
           date="2024-07-20"
@@ -58,7 +61,7 @@ const Experience = () => {
 
         <VerticalTimelineElement
           contentStyle={{
-            background: "#1d1836",
+            background: "#262D3A",
             color: "#fff",
           }}
           date="2024-06-15"
@@ -74,6 +77,7 @@ const Experience = () => {
           </div>
         </VerticalTimelineElement>
       </VerticalTimeline>
+      </div>
     </div>
   );
 };

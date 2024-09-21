@@ -30,16 +30,20 @@ const About = () => {
                   </p>
                   <div className="flex gap-2 mt-6">
                     <a
+                      className="flex items-center gap-2 py-3 text-white transition border-2 border-white rounded-full outline-none group bg-gray-950 px-7 focus:scale-105 hover:scale-105 active:scale-105 border-opacity-40"
                       href="#projects"
-                      className="px-6 py-3 transition-all duration-300 border border-gray-900 dark:border-gray-100 hover:bg-blue-600 hover:text-gray-100"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      Projects
+                      <span className="opacity-70">Proyectos</span>
                     </a>
                     <a
+                      className="flex items-center gap-2 py-3 text-white transition border-2 border-white rounded-full outline-none group bg-gray-950 px-7 focus:scale-105 hover:scale-105 active:scale-105 border-opacity-40"
                       href="#contact"
-                      className="flex gap-3 px-6 py-3 transition-all duration-300 hover:text-blue-600 hover:gap-4"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      <span className="self-center">Contact</span>
+                      <span className="opacity-70">Contacto</span>
                     </a>
                   </div>
                 </div>
