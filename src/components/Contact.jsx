@@ -8,28 +8,16 @@ import { MdAlternateEmail } from "react-icons/md";
 
 const Contact = () => {
   return (
-    <div className=" bg-[#0d1224]">
+    <div className=" bg-[#030618]">
       <div className="mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem] py-6 lg:py-10">
         <div id="contact" class="my-12 lg:my-16 relative mt-24 text-white">
-          <div className="flex justify-center my-5 lg:py-8">
-            <div className="flex items-center">
-              <span className="w-24 h-[2px] bg-[#1a1443]"></span>
-              <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
-                Contact
-              </span>
-              <span className="w-24 h-[2px] bg-[#1a1443]"></span>
-            </div>
-          </div>
           <div className="grid items-center grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
             <div>
-              <p className="font-medium mb-5 text-[#f23016] text-xl uppercase">
-                Contact with me
-              </p>
               <div className="max-w-3xl text-white rounded-lg border border-[#464c6a] p-3 lg:p-5">
                 <p className="text-left text-md text-[#d3d8e8] py-3">
-                  If you have any questions or concerns, please don't hesitate
-                  to contact me. I am open to any work opportunities that align
-                  with my skills and interests.
+                  Si tiene alguna pregunta o inquietud, no dude en ponerse en
+                  contacto conmigo. Estoy abierto a cualquier oportunidad de
+                  trabajo que se alinee con mis habilidades e intereses.
                 </p>
                 <form>
                   <div className="mb-4">
@@ -37,7 +25,7 @@ const Contact = () => {
                       htmlFor="name"
                       className="block mb-2 text-base font-medium text-left"
                     >
-                      Your Name:
+                      Nombre:
                     </label>
                     <input
                       type="text"
@@ -50,7 +38,7 @@ const Contact = () => {
                       htmlFor="email"
                       className="block mb-2 text-base font-medium text-left"
                     >
-                      Your Email:
+                      Email:
                     </label>
                     <input
                       type="email"
@@ -63,7 +51,7 @@ const Contact = () => {
                       htmlFor="message"
                       className="block mb-2 text-base font-medium text-left"
                     >
-                      Your Message:
+                      Mensaje:
                     </label>
                     <textarea
                       id="message"
@@ -76,7 +64,7 @@ const Contact = () => {
                       type="submit"
                       className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-5 md:px-12 py-2.5 md:py-3 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
                     >
-                      SEND MESSAGE
+                      Enviar Mensaje
                     </button>
                   </div>
                 </form>

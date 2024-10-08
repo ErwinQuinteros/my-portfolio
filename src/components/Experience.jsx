@@ -11,13 +11,13 @@ import { FaRegQuestionCircle, FaServer, FaLaptopCode } from "react-icons/fa";
 
 const Experience = () => {
   return (
-    <div id="experience" className="bg-[#111827] py-6">
+    <div id="experience" className="py-6 bg-white">
      <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
-          What I have done so far
+          Lo que he hecho hasta ahora
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
-          Work Experience.
+          Experiencia Laboral.
         </h2>
       </motion.div>
       <div className='mt-20 mb-20'>

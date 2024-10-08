@@ -88,7 +88,7 @@ const Home = () => {
         </a>
 
         <a
-          className="flex items-center gap-2 py-3 text-white transition border-2 border-white rounded-full outline-none group bg-gray-950 px-7 focus:scale-105 hover:scale-105 active:scale-105 border-opacity-40"
+          className="flex items-center gap-2 py-3 text-white transition bg-transparent border-2 border-white rounded-full outline-none group px-7 focus:scale-105 hover:scale-105 active:scale-105 border-opacity-40"
           href="https://www.linkedin.com/in/erwin-quinteros-v/"
           target="_blank"
           rel="noopener noreferrer"
