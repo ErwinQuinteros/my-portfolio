@@ -5,21 +5,29 @@ import { staggerContainer } from "../utils/motion";
 const StarWrapper = (Component, idName) =>
   function HOC() {
     return (
-      <div id="projects" className="bg-[#111827]">
-        <motion.section
-          variants={staggerContainer()}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.25 }}
-          className="relative z-0 mx-auto max-w-7xl"
-        >
-          <span className="hash-span" id={idName}>
-            &nbsp;
-          </span>
+      <section
+        id="projects"
+        className="relative z-50 bg-[#030618] border-[#353951] border-t"
+      >
+        <div className="flex justify-center -z-40">
+          <div className="absolute top-0 h-[1px] w-1/2  bg-gradient-to-r from-transparent via-red-500 to-transparent"></div>
+        </div>
+        <div className="py-10 px-6 mx-auto sm:px-16 sm:py-16 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[80rem]">
+          <motion.section
+            variants={staggerContainer()}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            className="relative z-0 mx-auto"
+          >
+            <span className="hash-span" id={idName}>
+              &nbsp;
+            </span>
 
-          <Component />
-        </motion.section>
-      </div>
+            <Component />
+          </motion.section>
+        </div>
+      </section>
     );
   };
 

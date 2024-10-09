@@ -9,8 +9,8 @@ import { MdAlternateEmail } from "react-icons/md";
 const Contact = () => {
   return (
     <div className=" bg-[#030618]">
-      <div className="mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem] py-6 lg:py-10">
-        <div id="contact" class="my-12 lg:my-16 relative mt-24 text-white">
+      <div className="mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[80rem] py-6 lg:py-10">
+        <div id="contact" className="relative my-12 mt-24 text-white lg:my-16">
           <div className="grid items-center grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
             <div>
               <div className="max-w-3xl text-white rounded-lg border border-[#464c6a] p-3 lg:p-5">
