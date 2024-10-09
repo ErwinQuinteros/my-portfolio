@@ -11,11 +11,8 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="relative z-50 bg-[#030618] border-[#353951] border-t"
+      className="relative z-50 bg-[#030618]"
     >
-      <div className="flex justify-center -z-40">
-        <div className="absolute top-0 h-[1px] w-1/2  bg-gradient-to-r from-transparent via-red-500 to-transparent"></div>
-      </div>
       <div className="py-10 px-6 mx-auto sm:px-16 sm:py-16 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[80rem]">
         <div>
           <p className="sm:text-[18px] text-[16px] text-white tracking-wider text-center">

@@ -79,7 +79,7 @@ const Home = () => {
         }}
       >
         <a
-          className="flex items-center gap-2 py-3 transition bg-white rounded-full outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-105 active:scale-105 borderBlack text-gray-950"
+          className="flex items-center gap-2 py-3 transition bg-[#d4a22d] rounded-full outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-105 active:scale-105 borderBlack text-gray-950"
           href="/"
           target="_blank"
           rel="noopener noreferrer"

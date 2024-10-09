@@ -9,7 +9,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col items-center justify-between md:flex-row">
             <p className="text-sm">
-              © Developer Portfolio by  <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/" className="text-[#16f2b3]">Erwin Quinteros</a>
+              © Desarollado Portafolio por  <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/" className="text-[#d4a22d]">Erwin Quinteros</a>
             </p>
           </div>
         </div>
