@@ -42,7 +42,7 @@ const ProjectCard = ({
             >
               <img
                 src="/path/to/source_code_icon.png"
-                alt="source code"
+                alt="source_code"
                 className="object-contain w-1/2 h-1/2"
               />
             </div>

@@ -83,7 +83,7 @@ const projects = [
       },
       {
         name: "mongodb",
-        color: "pink-text-gradient",
+        color: "red",
       },
       {
         name: "aws",

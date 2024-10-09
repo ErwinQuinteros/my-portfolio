@@ -37,8 +37,8 @@ const Experience = () => {
               dateClassName="text-white"
               date="2020-08-09"
               iconStyle={{
-                background: "#030618",
-                color: "#fff",
+                background: "#d4a22d",
+                color: "#111827",
                 BiFontSize: 2,
               }}
               icon={<VscWorkspaceTrusted />}
@@ -59,7 +59,7 @@ const Experience = () => {
               }}
               dateClassName="text-white"
               date="2024-07-20"
-              iconStyle={{ background: "#030618", color: "#fff" }}
+              iconStyle={{ background: "#d4a22d", color: "#111827" }}
               icon={<FaServer />}
             >
               <div className="text-left">
@@ -79,7 +79,7 @@ const Experience = () => {
               }}
               dateClassName="text-white"
               date="2024-06-15"
-              iconStyle={{ background: "#030618", color: "#fff" }}
+              iconStyle={{ background: "#d4a22d", color: "#111827" }}
               icon={<FaLaptopCode />}
             >
               <div className="text-left">

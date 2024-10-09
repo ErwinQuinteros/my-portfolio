@@ -12,7 +12,7 @@ const About = () => {
         </div>
         <div className="flex flex-wrap gap-2 pt-5 align-center md:flex-nowrap">
           <div className="lg:w-[80%] text-white text-left">
-            <h2 className="sm:text-[18px] text-[16px]">Software Developer</h2>
+            <h2 className="sm:text-[18px] text-[16px]">Desarrollador de Software</h2>
             <h1 className="font-black sm:text-[40px] text-[30px] lg:w-[85%]">
               Resumen
             </h1>
