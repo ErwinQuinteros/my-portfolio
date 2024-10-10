@@ -50,7 +50,7 @@ const About = () => {
 
           <div className="hidden lg:block w-[480px] self-center">
             <img
-              alt="about image"
+              alt="about"
               className="rounded-[10%] transform"
               src="https://images.unsplash.com/photo-1531973576160-7125cd663d86"
             />
