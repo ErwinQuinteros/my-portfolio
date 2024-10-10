@@ -12,7 +12,9 @@ const About = () => {
         </div>
         <div className="flex flex-wrap gap-2 pt-5 align-center md:flex-nowrap">
           <div className="lg:w-[80%] text-white text-left">
-            <h2 className="sm:text-[18px] text-[16px]">Desarrollador de Software</h2>
+            <h2 className="sm:text-[18px] text-[16px]">
+              Desarrollador de Software
+            </h2>
             <h1 className="font-black sm:text-[40px] text-[30px] lg:w-[85%]">
               Resumen
             </h1>
@@ -48,6 +50,7 @@ const About = () => {
 
           <div className="hidden lg:block w-[480px] self-center">
             <img
+              alt="about image"
               className="rounded-[10%] transform"
               src="https://images.unsplash.com/photo-1531973576160-7125cd663d86"
             />
