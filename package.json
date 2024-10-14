@@ -8,6 +8,7 @@
     "@testing-library/react": "^16.0.1",
     "@testing-library/user-event": "^13.5.0",
     "autoprefixer": "^10.4.19",
+    "cloudflared": "^0.5.3",
     "clsx": "^2.1.1",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^11.3.21",

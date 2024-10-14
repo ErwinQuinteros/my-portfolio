@@ -6,6 +6,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { FaServer, FaLaptopCode } from "react-icons/fa";
 import { VscWorkspaceTrusted } from "react-icons/vsc";
+import { styles } from "../styles";
 
 const Experience = () => {
   return (
@@ -13,12 +14,12 @@ const Experience = () => {
       id="experience"
       className="relative z-50 bg-[#030618]"
     >
-      <div className="py-10 px-6 mx-auto sm:px-16 sm:py-16 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[80rem]">
+      <div className={`${styles.bgSections} `}>
         <div>
-          <p className="sm:text-[18px] text-[16px] text-white tracking-wider text-center">
+          <p className="sm:text-[18px] text-[16px] text-[#FFA726] tracking-wider text-center">
             Lo que he hecho hasta ahora
           </p>
-          <h2 className="text-white font-black sm:text-[40px] text-[30px]">
+          <h2 className="text-[#BDBDBD] font-black sm:text-[40px] text-[30px]">
             Experiencia Laboral
           </h2>
         </div>
@@ -34,10 +35,10 @@ const Experience = () => {
                 color: "#111827",
                 marginTop: "2rem",
               }}
-              dateClassName="text-white"
+              dateClassName="text-[#FFA726]"
               date="2020-08-09"
               iconStyle={{
-                background: "#d4a22d",
+                background: "#FFA726",
                 color: "#111827",
                 BiFontSize: 2,
               }}
@@ -57,9 +58,9 @@ const Experience = () => {
                 background: "#fff",
                 color: "#111827",
               }}
-              dateClassName="text-white"
+              dateClassName="text-[#FFA726]"
               date="2024-07-20"
-              iconStyle={{ background: "#d4a22d", color: "#111827" }}
+              iconStyle={{ background: "#FFA726", color: "#111827" }}
               icon={<FaServer />}
             >
               <div className="text-left">
@@ -77,9 +78,9 @@ const Experience = () => {
                 background: "#fff",
                 color: "#111827",
               }}
-              dateClassName="text-white"
+              dateClassName="text-[#FFA726]"
               date="2024-06-15"
-              iconStyle={{ background: "#d4a22d", color: "#111827" }}
+              iconStyle={{ background: "#FFA726", color: "#111827" }}
               icon={<FaLaptopCode />}
             >
               <div className="text-left">

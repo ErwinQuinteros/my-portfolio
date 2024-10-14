@@ -26,7 +26,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="w-full p-5 bg-white bg-tertiary rounded-2xl min-h-[450px] flex flex-col justify-between"
+        className="w-full p-5 bg-[#BDBDBD] bg-tertiary rounded-2xl min-h-[450px] flex flex-col justify-between"
       >
         <div className="relative w-full h-[230px]">
           <img
@@ -75,10 +75,10 @@ const Projects = () => {
   return (
     <>
       <motion.div variants={textVariant()} className="text-center">
-        <p className="sm:text-[18px] text-[16px] text-white tracking-wider">
+        <p className="sm:text-[18px] text-[16px] text-[#FFA726] tracking-wider">
           Mi trabajo
         </p>
-        <h2 className="text-white font-black sm:text-[40px] text-[30px]">
+        <h2 className="text-[#BDBDBD] font-black sm:text-[40px] text-[30px]">
           Proyectos
         </h2>
       </motion.div>
