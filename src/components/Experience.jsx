@@ -55,7 +55,10 @@ const Experience = () => {
               }}
               dateClassName="text-[#FFA726]"
               date="2024-07-20"
-              iconStyle={{ background: "#030618", color: "#FFA726" }}
+              iconStyle={{ 
+                background: "#030618", 
+                color: "#FFA726" 
+              }}
               icon={<FaServer />}
             >
               <div className="text-left">

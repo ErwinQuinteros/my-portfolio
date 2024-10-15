@@ -54,7 +54,6 @@ const Header = () => {
         </nav>
       </motion.div>
       </div>
-      {/* <LanguageSwitcher/> */}
     </header>
   );
 };
