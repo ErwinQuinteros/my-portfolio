@@ -3,7 +3,6 @@ import React, { useState } from "react";
 
 const LanguageSwitcher = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [language, setLanguage] = useState("es");
 
   const handleLanguageChange = (lang) => {
     setLanguage(lang);

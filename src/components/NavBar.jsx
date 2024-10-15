@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import clsx from "clsx";
 import { motion } from "framer-motion";
 import { Link as ScrollLink } from "react-scroll";
-import LanguageSwitcher from "../hoc/LanguageSwitcher";
 const Header = () => {
   const [active, setActive] = useState("Projects");
 
