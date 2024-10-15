@@ -10,10 +10,7 @@ import { styles } from "../styles";
 
 const Experience = () => {
   return (
-    <section
-      id="experience"
-      className="relative z-50 bg-[#030618]"
-    >
+    <section id="experience" className="relative z-50 bg-[#030618]">
       <div className={`${styles.bgSections} `}>
         <div>
           <p className="sm:text-[18px] text-[16px] text-[#FFA726] tracking-wider text-center">
@@ -31,21 +28,19 @@ const Experience = () => {
             <VerticalTimelineElement
               className="text-start"
               contentStyle={{
-                background: "#fff",
+                background: "#BDBDBD",
                 color: "#111827",
                 marginTop: "2rem",
               }}
               dateClassName="text-[#FFA726]"
               date="2020-08-09"
               iconStyle={{
-                background: "#FFA726",
-                color: "#111827",
-                BiFontSize: 2,
+                background: "#030618", color: "#FFA726", BiFontSize: 2
               }}
               icon={<VscWorkspaceTrusted />}
             >
               <div className="text-center">
-                <h3 className="text-lg font-bold">QA (Quality Assurance)</h3>
+                <h3 className="text-lg font-bold">Pasante QA (Quality Assurance)</h3>
                 <h4 className="font-bold text-md">Xanthops SRL</h4>
                 <p className="text-gray-900">
                   Description of QA responsibilities and experiences.
@@ -55,12 +50,12 @@ const Experience = () => {
 
             <VerticalTimelineElement
               contentStyle={{
-                background: "#fff",
+                background: "#BDBDBD",
                 color: "#111827",
               }}
               dateClassName="text-[#FFA726]"
               date="2024-07-20"
-              iconStyle={{ background: "#FFA726", color: "#111827" }}
+              iconStyle={{ background: "#030618", color: "#FFA726" }}
               icon={<FaServer />}
             >
               <div className="text-left">
@@ -75,12 +70,12 @@ const Experience = () => {
             <VerticalTimelineElement
               className="text-start"
               contentStyle={{
-                background: "#fff",
+                background: "#BDBDBD",
                 color: "#111827",
               }}
               dateClassName="text-[#FFA726]"
               date="2024-06-15"
-              iconStyle={{ background: "#FFA726", color: "#111827" }}
+              iconStyle={{ background: "#030618", color: "#FFA726" }}
               icon={<FaLaptopCode />}
             >
               <div className="text-left">

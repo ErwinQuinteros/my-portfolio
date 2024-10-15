@@ -4,11 +4,16 @@ import { IoLocationSharp } from "react-icons/io5";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { IoLogoGithub, IoLogoWhatsapp } from "react-icons/io";
 import { MdAlternateEmail } from "react-icons/md";
+import { useInView } from "react-intersection-observer";
 import swal from "sweetalert";
 import "./../index.css";
 import { styles } from "../styles";
 
 const Contact = () => {
+  const { ref: sectionRef, inView: isVisible } = useInView({
+    triggerOnce: true, 
+    threshold: 0.4,
+  });
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -60,16 +65,21 @@ const Contact = () => {
   return (
     <section
       id="contact"
+      ref={sectionRef}
       className="relative z-50 bg-[#030618] border-[#353951] border-t"
     >
       <div className={`${styles.bgSections} `}>
-        <div className="lg:w-[80%] text-[#BDBDBD] text-left mb-5">
+        <div className={`lg:w-[80%] text-[#BDBDBD] text-left mb-5 transition-all duration-1000 ease-out transform ${
+              isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'
+            }`}>
           <h1 className="font-black sm:text-[40px] text-[30px] border-b-4 border-[#ffa726] w-12">
             Contacto
           </h1>
         </div>
         <div className="grid items-center grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-          <div className="max-w-3xl text-[#BDBDBD] rounded-lg border border-[#464c6a] p-3 lg:p-5">
+          <div className={`max-w-3xl text-[#BDBDBD] rounded-lg border border-[#464c6a] p-3 lg:p-5 transition-all duration-1000 ease-out transform ${
+              isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'
+            }`}>
             <p className="text-left text-md text-[#d3d8e8] py-3">
               Si tiene alguna pregunta o inquietud, no dude en ponerse en
               contacto conmigo.
@@ -127,7 +137,9 @@ const Contact = () => {
               </div>
             </form>
           </div>
-          <div className="lg:w-3/4 ">
+          <div className={`lg:w-3/4 transition-all duration-1000 ease-out transform ${
+              isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'
+            }`}>
             <div className="flex flex-col gap-5 text-[#BDBDBD] lg:gap-9">
               <p className="flex items-center gap-3 text-sm md:text-lg">
                 <MdAlternateEmail

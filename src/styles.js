@@ -14,6 +14,7 @@ const styles = {
     "sm:text-[18px] text-[14px] text-gray-900 uppercase tracking-wider",
   
   bgSections: "py-10 px-6 mx-auto sm:px-16 sm:py-16 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[80rem]",
+  
 };
 
 export { styles };

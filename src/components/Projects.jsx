@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+import { fadeIn } from "../utils/motion";
 
 const ProjectCard = ({
   index,
@@ -74,14 +74,14 @@ const ProjectCard = ({
 const Projects = () => {
   return (
     <>
-      <motion.div variants={textVariant()} className="text-center">
+      <div className="text-center">
         <p className="sm:text-[18px] text-[16px] text-[#FFA726] tracking-wider">
           Mi trabajo
         </p>
         <h2 className="text-[#BDBDBD] font-black sm:text-[40px] text-[30px]">
           Proyectos
         </h2>
-      </motion.div>
+      </div>
 
       <div className="grid w-full grid-cols-1 gap-6 mt-20 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (

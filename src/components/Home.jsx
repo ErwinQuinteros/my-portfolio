@@ -1,6 +1,5 @@
 import React from "react";
 import ParticlesComponent from "./ParticlesComponent";
-import { motion } from "framer-motion";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 import profile from "../assets/profile.jpg";
@@ -17,13 +16,7 @@ const Home = () => {
         <ParticlesComponent />
         <div className="flex items-center justify-center pt-14">
           <div className="relative">
-            <motion.div
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                type: "tween",
-                duration: 0.2,
-              }}
+            <div
             >
               <img
                 src={profile}
@@ -34,24 +27,17 @@ const Home = () => {
                 priority={true}
                 className="w-40 h-40 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
               />
-            </motion.div>
+            </div>
 
-            <motion.span
+            <span
               className="absolute bottom-0 right-0 text-4xl"
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                type: "spring",
-                stiffness: 125,
-                delay: 0.1,
-                duration: 0.7,
-              }}
+             
             >
               👋
-            </motion.span>
+            </span>
           </div>
         </div>
-        <motion.h1
+        <h1
           className="mb-10 mt-4 px-0 sm:px-4 text-2xl font-medium !leading-[1.5] sm:text-5xl text-white max-w-[50rem] mx-auto"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
@@ -73,9 +59,9 @@ const Home = () => {
               repeat={Infinity}
             />
           </p>
-        </motion.h1>
+        </h1>
 
-        <motion.div
+        <div
           className="flex flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
@@ -101,7 +87,7 @@ const Home = () => {
             <span className="opacity-70">LinkedIn</span>
             <BsLinkedin className="opacity-70" />
           </a>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
