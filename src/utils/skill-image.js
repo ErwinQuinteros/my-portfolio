@@ -15,12 +15,15 @@ import go from "../assets/skills/go.svg";
 import graphql from "../assets/skills/graphql.svg";
 import html from "../assets/skills/html.svg";
 import java from "../assets/skills/java.svg";
+import NodeJs from "../assets/skills/nodejs.svg";
 import javascript from "../assets/skills/javascript.svg";
 import julia from "../assets/skills/julia.svg";
 import kotlin from "../assets/skills/kotlin.svg";
 import materialui from "../assets/skills/materialui.svg";
 import matlab from "../assets/skills/matlab.svg";
 import mongoDB from "../assets/skills/mongoDB.svg";
+import expressJS from "../assets/skills/express.js.svg";
+import Laravel from "../assets/skills/laravel.svg";
 import mysql from "../assets/skills/mysql.svg";
 import nextJS from "../assets/skills/nextJS.svg";
 import nginx from "../assets/skills/nginx.svg";
@@ -42,6 +45,8 @@ export const skillsImage = (skill) => {
       return html;
     case "css":
       return css;
+    case "nodejs":
+      return NodeJs;
     case "javascript":
       return javascript;
     case "next js":
@@ -54,6 +59,10 @@ export const skillsImage = (skill) => {
       return bootstrap;
     case "mongodb":
       return mongoDB;
+    case "express":
+      return expressJS;
+    case "laravel":
+      return Laravel;
     case "mysql":
       return mysql;
     case "postgresql":

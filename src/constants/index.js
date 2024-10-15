@@ -1,97 +1,177 @@
-
 const projects = [
   {
-    name: "Payment App",
+    name: "DL Academy",
     description:
-      // "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-      "A full-featured web application developed using the MERN stack, designed to simulate the functionality of PayTM. This app supports user registration, authentication, and secure banking transactions. Built with modern tools and technologies such as React with Vite, Tailwind CSS for styling.",
+      "Es una plataforma donde los usuarios pueden comprar e inscribirse en cursos que se ofrecen en modalidad online como presencial, la plataforma gestiona todo el proceso, desde la compra hasta la participación en las clases.",
     tags: [
       {
-        name: "react",
+        img: "vue.svg",
+        name: "Vue",
         color: "blue-text-gradient",
       },
       {
-        name: "express.js",
+        img: "express.js.svg",
+        name: "Express",
         color: "pink-text-gradient",
       },
       {
-        name: "mongodb",
+        img: "mongoDB.svg",
+        name: "Mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        img: "vuetifyjs.svg",
+        name: "Vuetify",
         color: "pink-text-gradient",
       },
     ],
-    image: "https://images.unsplash.com/photo-1531973576160-7125cd663d86",
-    source_code_link: "https://github.com/syedahmedullah14/PayTM-Project",
+    image: "/pf-projects/dl-academy.png",
+    source_code_link: "",
   },
   {
-    name: "Company Portfolio",
+    name: "Catedral Skirental",
     description:
-      "Built a responsive portfolio using ReactJS, leveraging components and state management for a seamless user experience across devices. Developed a feature for dynamic theme changes, enhancing user engagement by allowing personalization of background and foreground colors through efficient state management.",
+      "Es una plataforma para actividades de montaña, donde se puede alquiler equipos y hacer pago de las mismas para la práctica de Sky y snowboard. Permite a los usuarios acceder y ver los servicios.",
     tags: [
       {
-        name: "react",
+        img: "laravel.svg",
+        name: "Laravel",
         color: "blue-text-gradient",
       },
       {
-        name: "bootsrap5",
+        img: "bootstrap.svg",
+        name: "Bootsrap",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        img: "css.svg",
+        name: "Css",
+        color: "pink-text-gradient",
+      },
+      {
+        img: "mysql.svg",
+        name: "MySQL",
         color: "pink-text-gradient",
       },
     ],
-    image: "https://images.unsplash.com/photo-1531973576160-7125cd663d86",
-    source_code_link: "https://int-elligence.co.uk/",
+    image: "/pf-projects/skirental.png",
+    source_code_link: "",
   },
   {
-    name: "Company Portfolio",
+    name: "Violetta",
     description:
-      "Built a responsive portfolio using ReactJS, leveraging components and state management for a seamless user experience across devices. Developed a feature for dynamic theme changes, enhancing user engagement by allowing personalization of background and foreground colors through efficient state management.",
+      "Es una plataforma informativa de la empresa para la venta de productos cosméticos, ofrece a los usuarios trabajar con ellos como revendedores como también hacer compras de sus productos.",
     tags: [
       {
-        name: "react",
+        img: "laravel.svg",
+        name: "Laravel",
         color: "blue-text-gradient",
       },
       {
-        name: "bootsrap5",
+        img: "bootstrap.svg",
+        name: "Bootsrap",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        img: "css.svg",
+        name: "Css",
+        color: "pink-text-gradient",
+      },
+      {
+        img: "mysql.svg",
+        name: "MySQL",
         color: "pink-text-gradient",
       },
     ],
-    image: "https://images.unsplash.com/photo-1531973576160-7125cd663d86",
-    source_code_link: "https://int-elligence.co.uk/",
+    image: "/pf-projects/violetta.PNG",
+    source_code_link: "",
   },
   {
-    name: "Rental Management System",
+    name: "Gofogie",
     description:
-      "Developed a robust system for a construction equipment company to manage customer records, including transaction history, products, suppliers, and rental records, ensuring secure and efficient data storage and retrieval. Integrated a billing and invoicing system, allowing for accurate and streamlined financial transactions.",
+      "Es una plataforma en línea que fomentar la interacción y el sentido de comunidad entre personas mayores de 50 años. A través de esta página, los miembros podrán conectar, compartir experiencias y participar en diversas actividades enriquecedoras.",
     tags: [
       {
-        name: "react",
+        img: "vue.svg",
+        name: "Vue",
         color: "blue-text-gradient",
       },
       {
-        name: "express.js",
+        img: "nodejs.svg",
+        name: "Node",
+        color: "pink-text-gradient",
+      },
+      {
+        img: "mongoDB.svg",
+        name: "Mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "red",
-      },
-      {
-        name: "aws",
-        color: "green-text-gradient",
+        img: "vuetifyjs.svg",
+        name: "Vuetify",
+        color: "pink-text-gradient",
       },
     ],
-    image: "https://images.unsplash.com/photo-1531973576160-7125cd663d86",
-    source_code_link: "https://github.com/syedahmedullah14",
+    image: "/pf-projects/gofogie.PNG",
+    source_code_link: "",
+  },
+  {
+    name: "EasyShipping",
+    description:
+      "Es una plataforma diseñada para facilitar el registro y la gestión de datos de usuarios que desean enviar o recibir montos de dinero en efectivo o en cuentas bancarias en otro país.",
+    tags: [
+      {
+        img: "react.svg",
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        img: "laravel.svg",
+        name: "Laravel",
+        color: "pink-text-gradient",
+      },
+      {
+        img: "postgresql.svg",
+        name: "PostgreSQL",
+        color: "green-text-gradient",
+      },
+      {
+        img: "tailwind.svg",
+        name: "Tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "/pf-projects/izishipping.PNG",
+    source_code_link: "",
+  },
+  {
+    name: "Imocert",
+    description:
+      "IMOcert es una plataforma que brinda servicios de inspección y certificación de calidad a productores, procesadores y comercializadores en Latinoamérica y el Caribe.",
+    tags: [
+      {
+        img: "react.svg",
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        img: "Graphql.svg",
+        name: "Graphql",
+        color: "pink-text-gradient",
+      },
+      {
+        img: "express.js.svg",
+        name: "Express",
+        color: "pink-text-gradient",
+      },
+      {
+        img: "prisma-3.svg",
+        name: "Prisma",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "/pf-projects/imocert.PNG",
+    source_code_link: "",
   },
 ];
 

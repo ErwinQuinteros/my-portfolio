@@ -36,7 +36,7 @@ const ProjectCard = ({
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
+            {/* <div
               onClick={() => window.open(source_code_link, "_blank")}
               className="flex items-center justify-center w-10 h-10 rounded-full cursor-pointer black-gradient"
             >
@@ -45,31 +45,34 @@ const ProjectCard = ({
                 alt="source_code"
                 className="object-contain w-1/2 h-1/2"
               />
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="mt-5">
           <h3 className="text-gray-900 font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px] line-clamp-3">
+          <p className="mt-2 text-secondary text-[14px] line-clamp-5 text-justify">
             {description}
           </p>
         </div>
-
+        
         <div className="flex flex-wrap gap-2 mt-4 overflow-hidden">
           {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color} whitespace-nowrap`}
-            >
-              #{tag.name}
-            </p>
+            <div key={`${name}-${tag.name}`} className="flex items-center">
+              <img
+                src={`/svg/${tag.img}`}
+                alt={tag.name}
+                className="w-5 h-5 mr-1" 
+              />
+              <p className={`text-[14px] ${tag.color} whitespace-nowrap`}>
+                {tag.name}
+              </p>
+            </div>
           ))}
         </div>
       </Tilt>
     </motion.div>
   );
 };
-
 
 const Projects = () => {
   return (
@@ -79,7 +82,7 @@ const Projects = () => {
           Mi trabajo
         </p>
         <h2 className="text-[#BDBDBD] font-black sm:text-[40px] text-[30px]">
-          Proyectos
+          Algunos Proyectos
         </h2>
       </div>
 
