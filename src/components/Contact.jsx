@@ -1,17 +1,19 @@
+import "./../index.css";
+import swal from "sweetalert";
 import emailjs from "emailjs-com";
+import { styles } from "../styles";
+import { useTranslation } from "react-i18next";
 import { BiLogoLinkedin } from "react-icons/bi";
+import { MdAlternateEmail } from "react-icons/md";
 import { IoLocationSharp } from "react-icons/io5";
+import { useInView } from "react-intersection-observer";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { IoLogoGithub, IoLogoWhatsapp } from "react-icons/io";
-import { MdAlternateEmail } from "react-icons/md";
-import { useInView } from "react-intersection-observer";
-import swal from "sweetalert";
-import "./../index.css";
-import { styles } from "../styles";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const { ref: sectionRef, inView: isVisible } = useInView({
-    triggerOnce: true, 
+    triggerOnce: true,
     threshold: 0.4,
   });
   const handleSubmit = (e) => {
@@ -25,7 +27,8 @@ const Contact = () => {
       message: message.value,
     };
 
-    emailjs.send(
+    emailjs
+      .send(
         "service_3hi86ab",
         "template_8twxt8d",
         templateParams,
@@ -69,20 +72,27 @@ const Contact = () => {
       className="relative z-50 bg-[#030618] border-[#353951] border-t"
     >
       <div className={`${styles.bgSections} `}>
-        <div className={`lg:w-[80%] text-[#BDBDBD] text-left mb-5 transition-all duration-1000 ease-out transform ${
-              isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'
-            }`}>
+        <div
+          className={`lg:w-[80%] text-[#BDBDBD] text-left mb-5 transition-all duration-1000 ease-out transform ${
+            isVisible
+              ? "opacity-100 translate-x-0"
+              : "opacity-0 -translate-x-20"
+          }`}
+        >
           <h1 className="font-black sm:text-[40px] text-[30px] border-b-4 border-[#ffa726] w-12">
-            Contacto
+            {t("contact_title")}
           </h1>
         </div>
         <div className="grid items-center grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-          <div className={`max-w-3xl text-[#BDBDBD] rounded-lg border border-[#464c6a] p-3 lg:p-5 transition-all duration-1000 ease-out transform ${
-              isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'
-            }`}>
+          <div
+            className={`max-w-3xl text-[#BDBDBD] rounded-lg border border-[#464c6a] p-3 lg:p-5 transition-all duration-1000 ease-out transform ${
+              isVisible
+                ? "opacity-100 translate-x-0"
+                : "opacity-0 -translate-x-20"
+            }`}
+          >
             <p className="text-left text-md text-[#d3d8e8] py-3">
-              Si tiene alguna pregunta o inquietud, no dude en ponerse en
-              contacto conmigo.
+              {t("contact_description")}
             </p>
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
@@ -90,7 +100,7 @@ const Contact = () => {
                   htmlFor="name"
                   className="block mb-2 text-base font-medium text-left"
                 >
-                  Nombre:
+                  {t("contact_name")}:
                 </label>
                 <input
                   required
@@ -104,7 +114,7 @@ const Contact = () => {
                   htmlFor="email"
                   className="block mb-2 text-base font-medium text-left"
                 >
-                  Email:
+                  {t("contact_email")}:
                 </label>
                 <input
                   required
@@ -118,7 +128,7 @@ const Contact = () => {
                   htmlFor="message"
                   className="block mb-2 text-base font-medium text-left"
                 >
-                  Mensaje:
+                  {t("contact_message")}:
                 </label>
                 <textarea
                   required
@@ -132,14 +142,18 @@ const Contact = () => {
                   type="submit"
                   className="flex items-center gap-1 hover:gap-3 rounded-full bg-[#ffa726] px-5 md:px-12 py-2.5 md:py-3 md:text-sm text-lg tracking-wider text-[#030618] duration-200 hover:text-[#030618] hover:no-underline md:font-semibold  shadow-lg hover:shadow-slate-600/60 hover:border-[#BDBDBD] hover:bg-[#BDBDBD]  border-2 border-[#d4a22d] focus:scale-105 hover:scale-105 active:scale-105"
                 >
-                  Enviar Mensaje
+                  {t("contact_button_send")}
                 </button>
               </div>
             </form>
           </div>
-          <div className={`lg:w-3/4 transition-all duration-1000 ease-out transform ${
-              isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'
-            }`}>
+          <div
+            className={`lg:w-3/4 transition-all duration-1000 ease-out transform ${
+              isVisible
+                ? "opacity-100 translate-x-0"
+                : "opacity-0 translate-x-20"
+            }`}
+          >
             <div className="flex flex-col gap-5 text-[#BDBDBD] lg:gap-9">
               <p className="flex items-center gap-3 text-sm md:text-lg">
                 <MdAlternateEmail
@@ -164,25 +178,41 @@ const Contact = () => {
               </p>
             </div>
             <div className="flex items-center gap-5 mt-8 lg:mt-16 lg:gap-10">
-              <a target="_blank" href="https://github.com/ErwinQuinteros" rel="noopener noreferrer">
+              <a
+                target="_blank"
+                href="https://github.com/ErwinQuinteros"
+                rel="noopener noreferrer"
+              >
                 <IoLogoGithub
                   className="bg-[#BDBDBD] p-2 rounded-full hover:bg-[#ffa726] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
                   size={48}
                 />
               </a>
-              <a target="_blank" href="https://www.linkedin.com/in/erwin-quinteros-v/" rel="noopener noreferrer">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/erwin-quinteros-v/"
+                rel="noopener noreferrer"
+              >
                 <BiLogoLinkedin
                   className="bg-[#BDBDBD] p-2 rounded-full hover:bg-[#ffa726] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
                   size={48}
                 />
               </a>
-              <a target="_blank" href="https://www.instagram.com/quinteroserwin/" rel="noopener noreferrer">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/quinteroserwin/"
+                rel="noopener noreferrer"
+              >
                 <FaInstagram
                   className="bg-[#BDBDBD] p-2 rounded-full hover:bg-[#ffa726] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
                   size={48}
                 />
               </a>
-              <a target="_blank" href="https://www.facebook.com/profile.php?id=100089440620606" rel="noopener noreferrer">
+              <a
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=100089440620606"
+                rel="noopener noreferrer"
+              >
                 <FaFacebook
                   className="bg-[#BDBDBD] p-2 rounded-full hover:bg-[#ffa726] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
                   size={48}

@@ -1,0 +1,56 @@
+{
+  "_comment_h": "NAVBAR",
+  "i_am": "Hola, Soy Erwin.",
+  
+  "_comment": "NAVBAR",
+  "home": "Home",
+  "about_us": "Acerca de",
+  "experience": "Experiencia",
+  "projects": "Proyectos",
+  "skills_n": "Habilidades",
+  "contact": "Contacto",
+  
+  "_comment0": "ABOUT",
+  "ocupation": " Desarrollador de Software",
+  "summary": "Resumen",
+  "su_description": "¡Hola! Soy Erwin Quinteros, desarrollador de software con experiencia en backend y frontend. A lo largo de mi vida profesional, he tenido la oportunidad de trabajar en una amplia variedad de proyectos realizando tareas diferentes en cada proyecto. He cumplido funciones de desarrollador como de encargado de algunos proyectos pequeños que he ido realizando con un equipo. Mi enfoque siempre ha sido ofrecer productos de alta calidad que no solo cumplan con los requisitos técnicos, sino que también proporcionen una buena experiencia al usuario final.",
+  "button_project": "Proyectos",
+  "button_contact": "Contacto",
+
+  "_comment1": "EXPERIENCE",
+  "experience_p": "Lo que he hecho hasta ahora",
+  "experience_h2": " Experiencia Laboral",
+  "experience_1_title": "Pasante QA (Quality Assurance)",
+  "experience_1_point0": "Diseño y creación de casos de prueba basados en los requisitos del producto.",
+  "experience_1_point1": "Hice pruebas de compatibilidad en diferentes sistemas operativos, pruebas de regresión después de los cambios y actualizaciones.",
+  "experience_1_point2": "Trabaje con documentaciones haciendo reportes de bugs la cual compartía con los del equipo en cada reunión",
+  "experience_1_point3": " Participacion en reuniones con los desarrolladores, QA's y cliente para clarificar requisitos y expectativas",
+  "experience_2_title": "Desarrollador (Fronted | Backend)",
+  "experience_2_point0": "Participé en diversos proyectos utilizando tecnologías como Node.js, PHP, Laravel y React, donde integré frontend y backend a través del consumo de APIs RESTful. Además, desarrollé maquetaciones responsivas empleando frameworks como Bootstrap, Tailwind y Vuetify.",
+  "experience_2_point1": "También he trabajado como QA, asegurando la calidad en diferentes proyectos. Además, he guiado a nuevos desarrolladores en el área de frontend, ayudándolos a integrarse y a mejorar sus habilidades.",
+  "experience_3_point0": " He estado profundizando mis conocimientos en React y lideré un proyecto utilizando React y Laravel. Fui el encargado de un proyecto, donde mis funciones incluían organizar las tareas del equipo, además de asumir roles como desarrollador, front-end y QA.",
+  
+  "_comment2": "PROJECTS",
+  "project_subtitle": "Mi trabajo",
+  "project_title": "Algunos Proyectos",
+  "description_project1": "Es una plataforma donde los usuarios pueden comprar e inscribirse en cursos que se ofrecen en modalidad online como presencial, la plataforma gestiona todo el proceso, desde la compra hasta la participación en las clases.",
+  "description_project2": "Es una plataforma para actividades de montaña, donde se puede alquiler equipos y hacer pago de las mismas para la práctica de Sky y snowboard. Permite a los usuarios acceder y ver los servicios.",
+  "description_project3": "Es una plataforma informativa de la empresa para la venta de productos cosméticos, ofrece a los usuarios trabajar con ellos como revendedores como también hacer compras de sus productos.",
+  "description_project4": "Es una plataforma en línea que fomentar la interacción y el sentido de comunidad entre personas mayores de 50 años. A través de esta página, los miembros podrán conectar, compartir experiencias y participar en diversas actividades.",
+  "description_project5": "Es una plataforma diseñada para facilitar el registro y la gestión de datos de usuarios que desean enviar o recibir montos de dinero en efectivo o en cuentas bancarias en otro país.",
+  "description_project6": "IMOcert es una plataforma que brinda servicios de inspección y certificación de calidad a productores, procesadores y comercializadores en Latinoamérica y el Caribe.",
+  "skills": "Habilidades",
+
+  "_comment3": "CONTACT",
+  "contact_title": "Contato",
+  "contact_description": " Si tiene alguna pregunta o inquietud, no dude en ponerse en contacto conmigo.",
+  "contact_name": "Nombre",
+  "contact_email": "Email",
+  "contact_message": "Mensaje",
+  "contact_button_send": "Enviar Mensaje",
+
+  "_comment4": "FOOTER",
+  "developed_for": "Desarrollado por"
+
+}
+  

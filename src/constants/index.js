@@ -2,7 +2,7 @@ const projects = [
   {
     name: "DL Academy",
     description:
-      "Es una plataforma donde los usuarios pueden comprar e inscribirse en cursos que se ofrecen en modalidad online como presencial, la plataforma gestiona todo el proceso, desde la compra hasta la participación en las clases.",
+      "description_project1",
     tags: [
       {
         img: "vue.svg",
@@ -31,7 +31,7 @@ const projects = [
   {
     name: "Catedral Skirental",
     description:
-      "Es una plataforma para actividades de montaña, donde se puede alquiler equipos y hacer pago de las mismas para la práctica de Sky y snowboard. Permite a los usuarios acceder y ver los servicios.",
+      "description_project2",
     tags: [
       {
         img: "laravel.svg",
@@ -60,7 +60,7 @@ const projects = [
   {
     name: "Violetta",
     description:
-      "Es una plataforma informativa de la empresa para la venta de productos cosméticos, ofrece a los usuarios trabajar con ellos como revendedores como también hacer compras de sus productos.",
+      "description_project3",
     tags: [
       {
         img: "laravel.svg",
@@ -89,7 +89,7 @@ const projects = [
   {
     name: "Gofogie",
     description:
-      "Es una plataforma en línea que fomentar la interacción y el sentido de comunidad entre personas mayores de 50 años. A través de esta página, los miembros podrán conectar, compartir experiencias y participar en diversas actividades enriquecedoras.",
+      "description_project4",
     tags: [
       {
         img: "vue.svg",
@@ -118,7 +118,7 @@ const projects = [
   {
     name: "EasyShipping",
     description:
-      "Es una plataforma diseñada para facilitar el registro y la gestión de datos de usuarios que desean enviar o recibir montos de dinero en efectivo o en cuentas bancarias en otro país.",
+      "description_project5",
     tags: [
       {
         img: "react.svg",
@@ -147,7 +147,7 @@ const projects = [
   {
     name: "Imocert",
     description:
-      "IMOcert es una plataforma que brinda servicios de inspección y certificación de calidad a productores, procesadores y comercializadores en Latinoamérica y el Caribe.",
+      "description_project6",
     tags: [
       {
         img: "react.svg",

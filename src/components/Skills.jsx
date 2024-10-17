@@ -1,20 +1,34 @@
+import { styles } from "../styles";
+import { motion } from "framer-motion";
+import Marquee from "react-fast-marquee";
+import { useTranslation } from 'react-i18next';
 import { skillsData } from "../utils/data/skills";
 import { skillsImage } from "../utils/skill-image";
-import Marquee from "react-fast-marquee";
-import { styles } from "../styles";
+import { useInView } from "react-intersection-observer";
 
 function Skills() {
+  const { t } = useTranslation();
+  const { ref, inView } = useInView({
+    triggerOnce: true, 
+    threshold: 0.1,
+  });
   return (
     <section
       id="skills"
       className="relative z-50 bg-[#030618]"
     >
       <div className={`${styles.bgSections} `}>
-        <div className="sm:text-[18px] text-[16px] text-[#BDBDBD] tracking-wider text-center pb-8">
+      <motion.h1
+       className="sm:text-[18px] text-[16px] text-[#BDBDBD] tracking-wider text-center pb-8"
+          ref={ref}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+        >
           <h2 className="text-[#BDBDBD] font-black sm:text-[40px] text-[30px]">
-            Skills
+            {t('skills')}
           </h2>
-        </div>
+          </motion.h1>
         <Marquee
           gradient={false}
           speed={80}

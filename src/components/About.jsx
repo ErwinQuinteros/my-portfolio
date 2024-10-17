@@ -1,10 +1,12 @@
-import React from "react";
-import { useInView } from "react-intersection-observer";
-import { Link as ScrollLink } from "react-scroll";
 import "./../index.css";
+import React from "react";
 import { styles } from "../styles";
+import { useTranslation } from 'react-i18next';
+import { Link as ScrollLink } from "react-scroll";
+import { useInView } from "react-intersection-observer";
 
 const About = () => {
+  const { t } = useTranslation();
   const { ref: sectionRef, inView: isVisible } = useInView({
     triggerOnce: true, 
     threshold: 0.4,
@@ -27,21 +29,13 @@ const About = () => {
             }`}
           >
             <h2 className="sm:text-[18px] text-[16px] text-[#ffa726]">
-              Desarrollador de Software
+              {t('ocupation')}
             </h2>
             <h1 className="font-black sm:text-[40px] text-[30px] border-b-4 border-[#ffa726] w-12">
-              Resumen
+            {t('summary')}
             </h1>
             <p className="mt-6 text-base lg:w-[87%] leading-7 text-justify font-normal">
-              ¡Hola! Soy Erwin Quinteros, desarrollador de software con
-              experiencia en backend y frontend. A lo largo de mi vida
-              profesional, he tenido la oportunidad de trabajar en una amplia
-              variedad de proyectos realizando tareas diferentes en cada
-              proyecto. He cumplido funciones de desarrollador como de encargado
-              de algunos proyectos pequeños que he ido realizando con un equipo.
-              Mi enfoque siempre ha sido ofrecer productos de alta calidad que no solo
-              cumplan con los requisitos técnicos, sino que también proporcionen una
-              buena experiencia al usuario final.
+            {t('su_description')}
             </p>
             <div className="flex gap-2 mt-6">
               <ScrollLink
@@ -53,7 +47,7 @@ const About = () => {
                 duration={700}
                 className="flex items-center cursor-pointer gap-2 py-3 shadow-lg hover:shadow-slate-600/60 text-gray-950 hover:border-[#BDBDBD] hover:bg-[#BDBDBD] transition border-2 font-bold border-[#d4a22d] bg-[#d4a22d] rounded-full  px-5 focus:scale-105 hover:scale-105 active:scale-105"
               >
-                <span className="opacity-70">Proyectos</span>
+                <span className="opacity-70"> {t('button_project')}</span>
               </ScrollLink>
 
               <ScrollLink
@@ -65,7 +59,7 @@ const About = () => {
                 duration={700}
                 className="flex items-center cursor-pointer gap-2 py-3 shadow-lg hover:shadow-slate-600/60 text-[#d4a22d] hover:text-[#030618] hover:bg-[#BDBDBD] transition border-2 font-bold border-[#BDBDBD] rounded-full bg-[#030618] px-5 focus:scale-105 hover:scale-105 active:scale-105"
               >
-                <span className="opacity-70">Contacto</span>
+                <span className="opacity-70"> {t('button_contact')}</span>
               </ScrollLink>
             </div>
           </div>

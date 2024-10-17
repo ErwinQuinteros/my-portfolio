@@ -5,12 +5,14 @@ import { FaGithub } from "react-icons/fa";
 import profile from "../assets/profile.jpg";
 import { TypeAnimation } from "react-type-animation";
 import { styles } from "../styles";
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
+  const { t } = useTranslation();
   return (
     <section
       id="home"
-      className="relative z-50 bg-[#030618] border-[#353951] border-t"
+      className="relative z-40 bg-[#030618] border-[#353951] border-t"
     >
       <div className={`${styles.bgSections} `}>
         <ParticlesComponent />
@@ -42,7 +44,7 @@ const Home = () => {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <span className="font-bold">Hola, Soy Erwin.</span>
+          <span className="font-bold">{t('i_am')}</span>
           <p className="font-bold">
             <TypeAnimation
               sequence={[

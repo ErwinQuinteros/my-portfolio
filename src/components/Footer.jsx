@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { styles } from "../styles";
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
@@ -36,7 +38,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col items-center justify-between text-[#BDBDBD] md:flex-row">
             <p className="text-sm text-[#B4B4C8]">
-              © Desarollado Portafolio por{" "}
+              © {t('developed_for')} {" "}
               <a
                 target="_blank"
                 rel="noopener noreferrer"

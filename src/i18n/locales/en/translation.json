@@ -1,0 +1,55 @@
+{
+    "_comment_h": "NAVBAR",
+    "i_am": "Hello, I'm Erwin.",
+    
+    "_comment": "NAVBAR",
+    "home": "Home",
+    "about_us": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills_n": "Skills",
+    "contact": "Contact",
+
+    "_comment0": "ABOUT",
+    "ocupation": "Software Developer",
+    "summary": "Summary",
+    "su_description": "Hello! I am Erwin Quinteros, a software developer with experience in both backend and frontend. Throughout my professional life, I have had the opportunity to work on a wide variety of projects, performing different tasks in each one. I have fulfilled roles as a developer as well as being in charge of some small projects that I have worked on with a team. My focus has always been to deliver high-quality products that not only meet technical requirements but also provide a good experience for the end user.",
+    "button_project": "Projects",
+    "button_contact": "Contact",
+
+    "_comment1": "EXPERIENCE",
+    "experience_p": "What I have done so far",
+    "experience_h2": "Work Experience",
+    "experience_1_title": "QA Intern (Quality Assurance)",
+    "experience_1_point0": "Design and creation of test cases based on product requirements.",
+    "experience_1_point1": "I performed compatibility testing on different operating systems, regression testing after changes and updates.",
+    "experience_1_point2": "I worked with documentation, creating bug reports that I shared with the team in each meeting.",
+    "experience_1_point3": "Participation in meetings with developers, QA's, and clients to clarify requirements and expectations.",
+    "experience_2_title": "Developer (Fronted | Backend)",
+    "experience_2_point0": "I participated in various projects using technologies like Node.js, PHP, Laravel, and React, where I integrated frontend and backend through the consumption of RESTful APIs. Additionally, I developed responsive layouts using frameworks like Bootstrap, Tailwind, and Vuetify.",
+    "experience_2_point1": "I have also worked as QA, ensuring quality in different projects. Furthermore, I have guided new developers in the frontend area, helping them integrate and improve their skills.",
+    "experience_3_point0": "I have been deepening my knowledge in React and led a project using React and Laravel. I was in charge of a project, where my duties included organizing the team's tasks, in addition to taking on roles as a developer, front-end, and QA.",
+
+    "_comment2": "PROJECTS",
+    "project_subtitle": "My Work",
+    "project_title": "Some Projects",
+    "description_project1": "It is a platform where users can buy and enroll in courses offered in both online and in-person formats; the platform manages the entire process, from purchase to class participation.",
+    "description_project2": "It is a platform for mountain activities, where users can rent equipment and make payments for skiing and snowboarding. It allows users to access and view services.",
+    "description_project3": "It is an informative platform for the company selling cosmetic products, offering users the opportunity to work with them as resellers as well as purchase their products.",
+    "description_project4": "It is an online platform that promotes interaction and a sense of community among people over 50 years old. Through this page, members can connect, share experiences, and participate in various activities.",
+    "description_project5": "It is a platform designed to facilitate the registration and management of user data who wish to send or receive cash amounts or bank transfers in another country.",
+    "description_project6": "IMOcert is a platform that provides inspection and quality certification services to producers, processors, and marketers in Latin America and the Caribbean.",
+    "skills": "Skills",
+
+    "_comment3": "CONTACT",
+    "contact_title": "Contact",
+    "contact_description": "If you have any questions or concerns, feel free to contact me.",
+    "contact_name": "Name",
+    "contact_email": "Email",
+    "contact_message": "Message",
+    "contact_button_send": "Send Message",
+
+    "_comment4": "FOOTER",
+    "developed_for": "Developed by"
+
+}
