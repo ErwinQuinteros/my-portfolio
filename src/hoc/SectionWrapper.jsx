@@ -7,7 +7,7 @@ const StarWrapper = (Component, idName) =>
     return (
       <section
         id="projects"
-        className="relative z-50 bg-[#030618] border-[#353951] border-t"
+        className="relative z-50 bg-[#030618] border-[#353951] border-t overflow-hidden"
       >
         <div className="flex justify-center -z-40">
           <div className="absolute top-0 h-[1px] w-1/2  bg-gradient-to-r from-transparent via-yellow-600 to-transparent"></div>

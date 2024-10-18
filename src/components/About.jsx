@@ -16,7 +16,7 @@ const About = () => {
     <section
       id="about-us"
       ref={sectionRef}
-      className="relative z-50 bg-[#030618] border-[#353951] border-t"
+      className="relative z-50 bg-[#030618] border-[#353951] border-t overflow-hidden"
     >
       <div className={`${styles.bgSections} `}>
         <div className="flex justify-center -z-40">

@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="relative z-40 bg-[#030618] border-[#353951] border-t"
+      className="relative z-40 bg-[#030618] border-[#353951] border-t overflow-hidden"
     >
       <div className={`${styles.bgSections} `}>
         <ParticlesComponent />

@@ -31,7 +31,7 @@ const Footer = () => {
 
   return (
     <section id="footer">
-      <div className="relative z-50 bg-[#030618] border-[#353951] border-t">
+      <div className="relative z-50 bg-[#030618] border-[#353951] border-t overflow-hidden">
         <div className={`${styles.bgSections}`}>
           <div className="flex justify-center -z-40">
             <div className="absolute top-0 h-[1px] w-1/2 bg-gradient-to-r from-transparent via-yellow-600 to-transparent"></div>
