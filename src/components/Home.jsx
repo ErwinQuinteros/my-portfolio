@@ -73,7 +73,7 @@ const Home = () => {
         >
           <a
             className="shadow-lg hover:shadow-slate-600/60 flex items-center gap-2 py-3 transition hover:bg-[#BDBDBD] bg-[#d4a22d] rounded-full cursor-pointer group px-7 focus:scale-110 hover:scale-105 active:scale-105 borderBlack text-gray-950"
-            href="/"
+            href="https://github.com/ErwinQuinteros"
             target="_blank"
             rel="noopener noreferrer"
           >
