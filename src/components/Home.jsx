@@ -2,7 +2,7 @@ import React from "react";
 import ParticlesComponent from "./ParticlesComponent";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
-import profile from "../assets/profile.jpg";
+import profile from "../assets/image.jpg";
 import { TypeAnimation } from "react-type-animation";
 import { styles } from "../styles";
 import { useTranslation } from 'react-i18next';

@@ -1,6 +1,6 @@
 import "./../index.css";
 import swal from "sweetalert";
-import emailjs from "emailjs-com";
+import emailjs from '@emailjs/browser';
 import { styles } from "../styles";
 import { useTranslation } from "react-i18next";
 import { BiLogoLinkedin } from "react-icons/bi";
