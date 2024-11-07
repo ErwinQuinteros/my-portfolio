@@ -48,7 +48,7 @@ const Header = () => {
           animate={{ y: 0, x: "-50%", opacity: 1 }}
         >
           <nav className="flex justify-center h-full">
-            <ul className="flex w-auto flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:flex-nowrap sm:gap-5">
+            <ul className="flex w-auto flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium sm:flex-nowrap sm:gap-5">
               {links.map((link, index) => (
                 <motion.li
                   className="relative flex items-center justify-center cursor-pointer h-3/4"
@@ -66,8 +66,8 @@ const Header = () => {
                     className={clsx(
                       "flex items-center justify-center w-full px-3 py-3 transition",
                       active === link.name
-                        ? "text-[#ffa726]"
-                        : "hover:text-[#ffa726]"
+                        ? "text-[#da9b09]"
+                        : "hover:text-[#da9b09]"
                     )}
                     onSetActive={() => setActive(link.name)}
                   >
