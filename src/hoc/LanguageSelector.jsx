@@ -3,12 +3,12 @@ import { useTranslation } from "react-i18next";
 
 const LanguageSelector = () => {
   const { i18n } = useTranslation();
-  const [selectedLanguage, setSelectedLanguage] = useState("es");
+  const [selectedLanguage, setSelectedLanguage] = useState("en");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const languages = [
-    { code: "es", name: "Español", icon: "/svg/spain.ico" },
     { code: "en", name: "English", icon: "/svg/united-states.ico" },
+    { code: "es", name: "Español", icon: "/svg/spain.ico" },
     { code: "pt", name: "Português", icon: "/svg/brazil.ico" },
   ];
 
