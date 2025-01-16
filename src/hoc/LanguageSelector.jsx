@@ -21,7 +21,7 @@ const LanguageSelector = () => {
   return (
     <div className="relative inline-block">
       <div
-        className="flex items-center px-4 py-2 bg-white border border-gray-300 rounded-md cursor-pointer md:bg-transparent md:border-transparent"
+        className="flex items-center px-4 py-2 bg-white border border-gray-400 rounded-md cursor-pointer md:bg-transparent md:border-transparent"
         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
       >
         <img
@@ -35,7 +35,7 @@ const LanguageSelector = () => {
       </div>
 
       {isDropdownOpen && (
-        <ul className="absolute w-full mt-2 bg-white border border-gray-300 rounded-md shadow-lg">
+        <ul className="absolute w-32 mt-2 bg-white border border-gray-300 rounded-md shadow-lg md:w-full">
           {languages.map((lang) => (
             <li
               key={lang.code}

@@ -43,7 +43,7 @@ const Header = () => {
     <header className="z-[999] relative">
       <div className="lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[80rem]">
         <motion.div
-          className="hidden md:block fixed top-0 left-1/2 h-[4.5rem] rounded-none border border-white border-opacity-40 bg-[#BDBDBD] shadow-lg backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:rounded-full w-auto px-4"
+          className="hidden md:block fixed top-0 left-1/2 h-[4.5rem] rounded-none border border-white border-opacity-40 bg-white shadow-lg backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:rounded-full w-auto px-4"
           initial={{ y: -100, x: "-50%", opacity: 0 }}
           animate={{ y: 0, x: "-50%", opacity: 1 }}
         >
@@ -84,7 +84,7 @@ const Header = () => {
         <div
           className={clsx(
             "fixed top-0 left-0 px-4 z-50 w-full transition-all duration-300 md:hidden",
-            scrolled ? "bg-[#030618] shadow-lg" : "bg-transparent"
+            scrolled ? "bg-white shadow-lg" : "bg-transparent"
           )}
         >
           <div className="flex items-center justify-between p-4">
@@ -98,19 +98,19 @@ const Header = () => {
               <div
                 className={clsx(
                   "w-6 h-1 transition-all duration-300",
-                  scrolled ? "bg-white" : "bg-white"
+                  scrolled ? "bg-black" : "bg-white"
                 )}
               ></div>
               <div
                 className={clsx(
                   "w-6 h-1 transition-all duration-300",
-                  scrolled ? "bg-white" : "bg-white"
+                  scrolled ? "bg-black" : "bg-white"
                 )}
               ></div>
               <div
                 className={clsx(
                   "w-6 h-1 transition-all duration-300",
-                  scrolled ? "bg-white" : "bg-white"
+                  scrolled ? "bg-black" : "bg-white"
                 )}
               ></div>
             </div>

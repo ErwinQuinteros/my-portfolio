@@ -47,7 +47,7 @@ const Experience = () => {
                 marginTop: "2rem",
               }}
               dateClassName="text-[#FFA726]"
-              date="2020-08-09 - 2021-03-30"
+              date="2020-08 - 2021-03"
               iconStyle={{
                 background: "#030618",
                 color: "#FFA726",
@@ -87,7 +87,7 @@ const Experience = () => {
                 color: "#111827",
               }}
               dateClassName="text-[#FFA726]"
-              date="2021-03-01 - 2024-06-26"
+              date="2021-03 - 2024-06"
               iconStyle={{
                 background: "#030618",
                 color: "#FFA726",
@@ -121,7 +121,7 @@ const Experience = () => {
                 color: "#111827",
               }}
               dateClassName="text-[#FFA726]"
-              date="2024-06-15"
+              date="2024-06 - 2024-12"
               iconStyle={{ background: "#030618", color: "#FFA726" }}
               icon={<FaLaptopCode />}
             >
@@ -130,7 +130,7 @@ const Experience = () => {
                   <h3 className="text-lg font-bold">
                     {t("experience_2_title")}
                   </h3>
-                  <h4 className="font-bold text-md">Efinich Tech Solutions</h4>
+                  <h4 className="font-bold text-md">Freelancer</h4>
                 </div>
 
                 <p className="text-gray-600">
